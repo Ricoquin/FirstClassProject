@@ -1,0 +1,38 @@
+#photos{
+   align-items: center;
+}
+.img-fluid{
+   height: 190px;
+   width: 100%;
+}
+.form-control{
+   width: 200px;
+   padding: 10px;
+   margin-top: 15px;
+}
+.btn-outline-secondary{
+text-align: right;
+}
+#search-2{
+    width: 400px;
+}
+.btn-sm{
+   height: 30px;
+}
+p{
+   font-size: 30px;
+}
+.navbar{
+   border-bottom: 6px blue !important;
+}
+#search-2{
+    font-size: 15px;
+}
+.centered {
+   text-align: center;
+   /* transform: translate(-50%, -50%); */
+   color: white;
+   margin-top: -80px;
+   font-size: 25px;
+   font-style: bold;
+ }
