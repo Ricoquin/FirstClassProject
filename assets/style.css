@@ -1,0 +1,105 @@
+#jumbotron {
+    background-color: rgb(255, 119, 104);
+    width: 100%;
+}
+
+.gallery {
+    width: 120px;
+    height: 120px;
+}
+
+#photos {
+    align-items: center;
+}
+
+.img-fluid {
+    height: 190px;
+    width: 100%;
+    border-width: 2px !important;
+}
+
+.form-control {
+    width: 200px;
+    padding: 10px;
+    margin-top: 15px;
+}
+
+.btn-outline-secondary {
+    text-align: right;
+}
+
+#search-2 {
+    width: 400px;
+}
+
+.btn-sm {
+    height: 30px;
+}
+
+p {
+    font-size: 30px;
+}
+
+.navbar {
+    border-bottom: 6px blue !important;
+}
+
+#search-2 {
+    font-size: 15px;
+}
+
+.centered {
+    text-align: center;
+    /* transform: translate(-50%, -50%); */
+    color: white;
+    margin-top: -80px;
+    font-size: 25px;
+    font-style: bold;
+}
+
+nav {
+    background-image: url("../assets/images/kcmo.jpg");
+    height: 200px;
+}
+
+#push-nav {
+    margin-bottom: 200px;
+}
+
+body {
+    background-image: url("https://images.all-free-download.com/images/graphiclarge/wood_background_hd_picture_4_169843.jpg")
+}
+
+#aboutUs {
+    background-color: navy;
+    text-align: center;
+    color: white;
+}
+
+#rico {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    padding: 20px;
+}
+
+#paxton {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    padding: 20px;
+}
+
+#robert {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    padding: 20px;
+}
+
+#trenton {
+    width: 200px;
+    height: 200px;
+    background-color: crimson;
+    padding: 20px;
+}
