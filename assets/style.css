@@ -42,6 +42,7 @@ p {
 
 .navbar {
     border-bottom: 6px blue !important;
+    color: white;
 }
 
 #search-2 {
