@@ -1,26 +1,76 @@
-{/* <script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-app.js"></script>
 
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.2.1/firebase-analytics.js"></script>
+//  var firebaseConfig = {
+//     apiKey: "AIzaSyDnr6DupJmH878UPVSano0uqAkSmejcFzk",
+//     authDomain: "fir-activity-84cab.firebaseapp.com",
+//     databaseURL: "https://fir-activity-84cab.firebaseio.com",
+//     projectId: "fir-activity-84cab",
+//     storageBucket: "fir-activity-84cab.appspot.com",
+//     messagingSenderId: "418786824354",
+//     appId: "1:418786824354:web:d05ffcb0f8dd103dbc07fb",
+//    measurementId: "G-36GHTG8FS5"
+//  };
+// Initialize Firebase
+// firebase.initializeApp(firebaseConfig);
 
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCzhKDdl7fh1lznrJLB9MA_S2yQk__agBQ",
-    authDomain: "fir-act17.firebaseapp.com",
-    databaseURL: "https://fir-act17.firebaseio.com",
-    projectId: "fir-act17",
-    storageBucket: "fir-act17.appspot.com",
-    messagingSenderId: "222512331135",
-    appId: "1:222512331135:web:a6c82b385fcaab6188c24a",
-    measurementId: "G-S7WSQG846Y"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script> */}
 
+var lat = ["39.057803"]
+var long = ["-94.585649"]
+
+$(".data-image").on("click", function(){
+
+  var queryURL = "https://maps.googleapis.com/maps/api/place/textsearch/json?query=kansascitymo&key=AIzaSyCKFSH4p45OU8PBa0zWRvuXXUW1xIwsNGQ";
+
+
+
+  var map
+  var service;
+  var infowindow;
+  
+  
+    var myLocation = new google.maps.LatLng(lat[0], long[0]);
+  
+    map = new google.maps.Map(document.getElementById('map'), {
+        center: myLocation,
+        zoom: 15
+      });
+  
+    var request = {
+      location: myLocation,
+      radius: '500',
+      type: ['restaurant']
+    };
+  
+    service = new google.maps.places.PlacesService(map);
+    service.nearbySearch(request, callback);
+  
+  
+    function callback(results, status) {
+      if (status == google.maps.places.PlacesServiceStatus.OK) {
+        for (var i = 0; i < results.length; i++) {
+          var place = results[i];
+          createMarker(results[i]);
+        }
+      }
+    }
+
+
+    });
+  
+
+
+//  $("dataId").append(myInitCallback);
+
+//  var searchVal = $(this).attr("data-id")
+//  console.log(searchVal);
+
+ 
+  //$(".gcse-search").html(searchVal)
+
+
+// })
+
+
+/*
 const myInitCallback = function() {
     if (document.readyState == 'complete') {
       // Document is ready when CSE element is initialized.
@@ -43,9 +93,12 @@ const myInitCallback = function() {
       }, true);
     }
   };
+
   
   window.__gcse = {
     parsetags: 'explicit',
     initializationCallback: myInitCallback
   };
+*/
+
 
