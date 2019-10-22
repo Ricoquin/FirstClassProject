@@ -60,7 +60,11 @@ p {
 
 nav {
     background-image: url("../assets/images/kcmo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
     height: 200px;
+    background-repeat: round;
+    width: 100%;
 }
 
 #push-nav {
@@ -68,46 +72,14 @@ nav {
 }
 
 body {
-    background-image: url("https://images.all-free-download.com/images/graphiclarge/wood_background_hd_picture_4_169843.jpg")
-}
-
-#aboutUs {
-    background-color: rgb(11, 85, 155);
-    text-align: center;
-    color: white;
-}
-
-#rico {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    color: white;
-}
-
-#paxton {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    color: white;
-}
-
-#robert {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    color: white;
-}
-
-#trenton {
-    width: 200px;
-    height: 200px;
-    padding: 20px;
-    color: white;
+    background-image: url("https://images.all-free-download.com/images/graphiclarge/wood_background_hd_picture_4_169843.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
 }
 
 #footer {
     text-align: center;
     color: white;
-    background-color: blueviolet;
     padding: 5px;
+    height: 165px;
 }
