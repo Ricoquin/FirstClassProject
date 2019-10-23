@@ -22,10 +22,9 @@ $(".data-image").on("click", function(){
 
 
 
-  var map
+  var map;
   var service;
-  var infowindow;
-  
+  var createMarker;
   
     var myLocation = new google.maps.LatLng(lat[0], long[0]);
   
@@ -36,8 +35,8 @@ $(".data-image").on("click", function(){
   
     var request = {
       location: myLocation,
-      radius: '500',
-      type: ['restaurant']
+      radius: '200',
+      type: ['restaurant', 'bar','hotels','hospital','museaum' ]
     };
   
     service = new google.maps.places.PlacesService(map);
@@ -47,8 +46,8 @@ $(".data-image").on("click", function(){
     function callback(results, status) {
       if (status == google.maps.places.PlacesServiceStatus.OK) {
         for (var i = 0; i < results.length; i++) {
-          var place = results[i];
-          createMarker(results[i]);
+          var createMarker = results[i]
+          createMarker([i])
         }
       }
     }
